@@ -1,4 +1,5 @@
 import cardStyle from "../scss/card.module.scss";
+
 const Card = ({ data }) => {
   return (
     <div className={cardStyle['container']}>
