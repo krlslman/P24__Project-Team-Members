@@ -1,0 +1,8 @@
+//? Bu dosya (App.scss) diğer scss dosyalarının birleştiği global tasarım dosyamız
+
+@import "./reset", "./variables";
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: aliceblue;
+}

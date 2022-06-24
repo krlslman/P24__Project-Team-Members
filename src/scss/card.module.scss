@@ -1,0 +1,65 @@
+@import "./variables";
+
+.container {
+//   width: 1600px;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+//   margin: auto auto;
+  gap: 2rem;
+
+  
+
+  .card {
+    padding: 1.5rem;
+    max-width: 500px;
+    min-width: 300px;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.3);
+	background-color: rgb(235, 245, 245);
+
+    img {
+      width: 50%;
+      margin: 1rem;
+      border-radius: 10% 45%;
+    }
+    h1 {
+      color: $blue;
+    }
+    h2 {
+      color: $olive;
+    }
+
+    .btn-container {
+      button {
+        border-radius: 1rem;
+        color: white;
+        cursor: pointer;
+        border: none;
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+
+      &--small {
+        background-color: $olive;
+        padding: 0.8rem;
+        margin-right: 0.3rem;
+      }
+      &--large {
+        background-color: $darkPink;
+        padding: 0.8rem 1.6rem;
+      }
+    }
+  }
+
+  .card:hover {
+	opacity: 0.9;
+	-webkit-filter: saturate(2);
+}
+}
